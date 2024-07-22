@@ -19,12 +19,12 @@ body {
 	max-width: 410px;
 	border-radius: 7px;
 	padding: 16px 25px;
-	transition: all 0.5s ease;
+	transition: height 0.5s ease;
 }
-
 .container.active {
 	height: 530px;
 }
+
 
 head h1 {
 	text-align: center;
@@ -62,4 +62,23 @@ head h1 {
 
 .form button:hover{
 	background: #d8b3e3;
+}
+
+.container .qr-code {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 33px 0;
+	pointer-events: none;
+}
+
+.qr-code img {
+	width: 220px;
+	height: auto;
+}
+
+.container.active .qr-code{
+	opacity: 1;
+	pointer-events: auto;
+	transition: opacity 0.5s ease;
 }
