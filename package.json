@@ -1,0 +1,27 @@
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder"
+    },
+
+    "build": {
+    "appId": "proj-qrcode.com",
+    "productName": "Gerador de Qrcode",
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+    "devDependencies": {
+        "electron": "^32.0.1",
+        "electron-builder": "^24.13.3"
+    }
+}
