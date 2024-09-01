@@ -6,20 +6,19 @@
         "start": "electron .",
         "build": "electron-builder"
     },
-
     "build": {
-    "appId": "proj-qrcode.com",
-    "productName": "Gerador de Qrcode",
-    "win": {
-      "target": "nsis"
+        "appId": "proj-qrcode.com",
+        "productName": "Gerador de Qrcode",
+        "win": {
+            "target": "nsis"
+        },
+        "mac": {
+            "target": "dmg"
+        },
+        "linux": {
+            "target": "AppImage"
+        }
     },
-    "mac": {
-      "target": "dmg"
-    },
-    "linux": {
-      "target": "AppImage"
-    }
-  },
     "devDependencies": {
         "electron": "^32.0.1",
         "electron-builder": "^24.13.3"
