@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 node_modules/
 
 dist/
+=======
+/node_modules
+>>>>>>> f77d020b975430cb1904373e9c536cd9ffc07e06
